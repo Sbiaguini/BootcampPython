@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio OnClick</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    
+    <header class="header">
+        <h1>Petlopedia</h1>
+        <button id="sesionBtn" onclick="cambiarBotonSesion()">Iniciar sesión</button>
+    </header>
+    
+    <div class="contenedor-principal">
+        
+        <div class="sidebar">
+            <p>Petlopedia está definida por TI</p>
+            <button id="agregarBtn" onclick="ocultarBotonAgregar()">Agregar Definición</button>
+        </div>
+
+        <div class="contenido">
+
+            <div class="tarjeta">
+                <h2>Gato Atigrado</h2>
+                <p>Un gato con un pelaje distintivo que presenta rayas.</p>
+                <button onclick="darLike('Gato Atigrado', 'likesGato')">
+                    <span id="likesGato">0</span> me gusta
+                </button>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Golden Retriever</h2>
+                <p>Una raza de perro amistosa y devota.</p>
+                <button onclick="darLike('Golden Retriever', 'likesGolden')">
+                    <span id="likesGolden">0</span> me gusta
+                </button>
+            </div>
+
+        </div> </div> <script src="script.js"></script>
+</body>
+</html>

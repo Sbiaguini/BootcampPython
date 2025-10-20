@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    background-color: #f0f0f0; 
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-principal {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+
+.fila {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    width: 80%; 
+    max-width: 1000px;
+    margin: 10px auto; 
+    padding: 15px 0; 
+}
+
+
+.fila img {
+    
+    width: 180px; 
+    height: 180px;
+    
+    object-fit: contain; 
+    border: 5px solid deeppink; 
+    padding: 5px; 
+    background-color: white; 
+}
+
+
+.fila-amarilla {
+    background-color: #ffcc00; 
+}
+
+.fila-azul {
+    background-color: #66ccff; 
+}
+
+.fila-roja {
+    background-color: #ff6347; 
+}
+
+
+.pie-pagina {
+    background-color: #90ee90; 
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto 0 auto; 
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #333;
+}

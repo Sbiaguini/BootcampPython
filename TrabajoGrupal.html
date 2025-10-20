@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Sebastián</title>
+    
+    <style>
+        /* CSS Simplificado para la Versión 2: Colores y Tipografía Básica */
+        /* Colores usados: #003459 (Azul Oscuro para texto), #FFFFFF (Blanco para fondo) */
+        
+        body {
+            font-family: Arial, sans-serif; /* Tipografía base */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #003459; /* Color de texto principal */
+        }
+
+        /* Contenedor principal para centrar el contenido */
+        main {
+            max-width: 960px; /* Ancho máximo para el contenido principal */
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Títulos: solo color */
+        h1, h2, h3 {
+            color: #003459;
+            text-align: center;
+            margin-bottom: 20px; /* Espacio debajo de los títulos */
+        }
+
+        /* Enlaces (navegación y footer) */
+        a {
+            color: #007EA7; /* Un color de acento para los enlaces */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* IMAGEN DE PERFIL (serp.png) - Ahora con tamaño específico y circular */
+        #sobre-mi img {
+            width: 180px; /* Ancho fijo para la imagen de perfil */
+            height: 180px; /* Alto fijo para la imagen de perfil */
+            border-radius: 50%; /* Hace que la imagen sea circular */
+            object-fit: cover; /* Asegura que la imagen se ajuste bien sin distorsionarse */
+            border: 3px solid #007EA7; /* Borde sutil */
+            display: block;
+            margin: 20px auto; /* Centrar y darle espacio */
+        }
+
+        /* Otras imágenes (como las de la galería) */
+        /* Eliminamos el 'max-width: 100%' de 'img' general y lo aplicamos a 'main img' */
+        #galeria img {
+            max-width: 10%; /* Para que las imágenes de la galería no sean enormes */
+            height: auto;
+            margin: 10px;
+            display: inline-block; /* Para que se pongan en línea */
+            border: 1px solid #ccc;
+        }
+
+
+        /* Tabla: solo bordes básicos */
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #E0E0E0; /* Gris claro para el encabezado de la tabla */
+            color: #003459;
+        }
+
+        /* Centrar el video */
+        iframe {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%; /* Para que el video no se salga del contenedor */
+        }
+
+        /* Header y Footer: color de fondo básico */
+        header, footer {
+            background-color: #F0F0F0; /* Gris muy claro para separar */
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li a {
+            padding: 0 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sebastián Biaguini</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#intereses">Intereses y Artistas</a></li>
+                <li><a href="#favoritos">Mis Favoritos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <img src="serp.png" alt="Jolly Roger de One Piece">
+            <p>
+                Buenas a todos, me llamo Sebastián, tengo 30 y soy del pueblo de Mejillones. Ingresé a este bootcamp para ampliar mi conocimiento respecto a informática. Me gustan las series de acción, la música como el rock o metal, y por último me gusta pasar tiempo con mis mascotas y salir con ellos.
+            </p>
+        </section>
+
+        <section id="intereses">
+            <h2>Intereses</h2>
+            <ul>
+                <li>Programación y Tecnología</li>
+                <li>Videojuegos</li>
+                <li>Música (Rock y metal, Old School Rap)</li>
+                <li>Series</li>
+                <li>Robótica</li>
+                <li>One Piece</li>
+            </ul>
+
+            <h2>Mis 3 Artistas Favoritos</h2>
+            <ol>
+                <li>Michael Jackson</li>
+                <li>Jack Black</li>
+                <li>Snoop Dogg</li>
+            </ol>
+        </section>
+
+        <section id="favoritos">
+            <h2>Tabla de Favoritos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th colspan="5">Mis Favoritos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Anime</td>
+                        <td>One Piece</td>
+                        <td>Dr.Stone</td>
+                        <td>HunterxHunter</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Música</td>
+                        <td>Sonata Arctica</td>
+                        <td>Tenacious D</td>
+                        <td>Ice Cube</td>
+                        <td>Cuarteto de Nos</td>
+                        <td>Stratovarius</td>
+                    </tr>
+                    <tr>
+                        <td>Series de Acción</td>
+                        <td>The Mandalorian</td>
+                        <td>Peacemaker</td>
+                        <td>The Sopranos</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Canción Favorita actual (de las serie Peacemaker, Oh lord - Foxy Shazam)</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uFWnIYqxUOo?si=UeM9OZXRz7yN6Xlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            <h2>Galería de Imágenes: Personajes de One Piece</h2>
+            <img src="KnightsOfGod.jpg" alt="KnightsOfGod ">
+            <img src="RocksPirates.jpg" alt="Piratas de Rocks">
+            <img src="RogerPirates.jpg" alt="Piratas de Roger">
+            </section>
+    </main>
+
+    <footer id="contacto">
+        <h3>Contacto y Redes Sociales</h3>
+        <p>
+            Sígueme en mis redes:
+            <a href="https://www.linkedin.com/in/sebasti%C3%A1n-biaguini-neyra-a7645a25a/" target="_blank">LinkedIn</a> |
+            <a href="https://www.facebook.com/sebastian.biaguini" target="_blank">Facebook</a>
+        </p>
+        <p>&copy; 2025 Portafolio de Sebastián</p>
+    </footer>
+
+</body>
+</html>
