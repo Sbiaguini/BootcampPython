@@ -1,4 +1,4 @@
-/* Estilos muy simples, solo para darle estructura */
+
 
 body {
     font-family: sans-serif;
@@ -6,12 +6,12 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header */
+
 .header {
     background-color: #920f3e;
     color: white;
     padding: 15px;
-    display: flex; /* Para poner el título y el botón en línea */
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -24,14 +24,14 @@ body {
     cursor: pointer;
 }
 
-/* Contenedor principal con Flexbox simple para las dos columnas */
+
 .contenedor-principal {
     display: flex;
     max-width: 1000px;
     margin: 20px auto;
 }
 
-/* Estilos de la barra lateral */
+
 .sidebar {
     width: 250px;
     margin-right: 20px;
@@ -49,12 +49,12 @@ body {
     cursor: pointer;
 }
 
-/* Estilos del contenido principal */
+
 .contenido {
-    flex-grow: 1; /* Ocupa el resto del espacio */
+    flex-grow: 1;
 }
 
-/* Estilos de las tarjetas de definición */
+
 .tarjeta {
     padding: 20px;
     border: 1px solid #ccc;

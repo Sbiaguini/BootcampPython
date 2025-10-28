@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta Tu Árbol</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header class="header-banner">
+        <p class="slogan">Tu plataforma favorita de adopción de árboles</p>
+    </header>
+
+    <div class="main-container">
+
+        <div class="nav-content-wrap">
+            <nav class="main-nav">
+                <h1>AdoptaTuÁrbol</h1>
+                <div class="nav-buttons">
+                    <button class="btn-adoptar">Adoptar</button>
+                    <button class="btn-donar" onclick="mostrarAlertaDonacion()">Donar</button>
+                </div>
+            </nav>
+            
+            <main class="content-section">
+                
+                <div class="content-header">
+                    <h2 id="mostrarTexto">Mostrando: Todos los Árboles</h2>
+                    
+                    <div class="select-box">
+                        <select id="filtroArboles" onchange="actualizarTextoFiltro()">
+                            <option value="Todos los Árboles">Todos los Árboles</option>
+                            <option value="Árboles Frutales">Árboles Frutales</option>
+                            <option value="Árboles Nativos">Árboles Nativos</option>
+                            <option value="Árboles Ornamentales">Árboles Ornamentales</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="card-grid">
+
+                    <div class="card">
+                        <img src="images/alamo.jpg" alt="Álamo" class="card-img">
+                        <div class="card-info">
+                            <h3>Álamo</h3>
+                            <p>Árbol caducifolio, de hojas anchas y con largos peciolos.</p>
+                            <button class="btn-card" id="Alamo" onclick="cambiarEstadoAdopcion('Alamo')">Adoptar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/fresno.jpg" alt="Fresno" class="card-img">
+                        <div class="card-info">
+                            <h3>Fresno</h3>
+                            <p>Árbol con tronco recto y cilíndrico, con amplia copa.</p>
+                            <button class="btn-card" id="Fresno" onclick="cambiarEstadoAdopcion('Fresno')">Adoptar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="images/pino.jpg" alt="Pino" class="card-img">
+                        <div class="card-info">
+                            <h3>Pino</h3>
+                            <p>Árbol de la familia de las abietáceas, de tronco elevado, recto.</p>
+                            <button class="btn-card" id="Pino" onclick="cambiarEstadoAdopcion('Pino')">Adoptar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="images/jacaranda.jpg" alt="Jacaranda" class="card-img">
+                        <div class="card-info">
+                            <h3>Jacaranda</h3>
+                            <p>Árbol de copa extendida y redondeada con flores</p>
+                            <button class="btn-card" id="Jacaranda" onclick="cambiarEstadoAdopcion('Jacaranda')">Adoptar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-contact">
+            <h3>Contáctanos</h3>
+            <p>Av. Principal #123</p>
+            <p>Ciudad Palma, 10000</p>
+            <p>Chile</p>
+        </div>
+
+        <div class="footer-contact">
+            <p>Inicio</p>
+            <p>Sobre Nosotros</p>
+            <p>Adopta un Árbol</p>
+        </div>
+        
+        <div class="footer-contact">
+            <p>Contacto</p>
+            <p>Patrocinadores</p>
+            <p>Proyectos</p>
+        </div>
+        
+        <div class="footer-subscribe">
+            <h3>Suscríbete</h3>
+            <div class="subscribe-form">
+                <input type="email" placeholder="usuario@correo.com">
+                <button class="btn-subscribe">enviar</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
